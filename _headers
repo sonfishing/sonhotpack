@@ -1,9 +1,11 @@
-/*
-  Content-Type: text/html
-  X-Content-Type-Options: nosniff
+/assets/*.css
+  Content-Type: text/css
 
-/assets/*
+/assets/*.js
   Content-Type: application/javascript
 
-/src/*
+*.js
   Content-Type: application/javascript
+
+*.css
+  Content-Type: text/css
