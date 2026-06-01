@@ -1,0 +1,6 @@
+{
+  "name": "손일병 핫팩",
+  "description": "최고의 고온 지속력과 품질을 가진 군부대 납품용 프리미엄 핫팩 '손일병 핫팩' 브랜드 공식 사이트입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
