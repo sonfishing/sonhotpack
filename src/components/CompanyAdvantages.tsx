@@ -10,16 +10,11 @@ export default function CompanyAdvantages() {
       sub: "정시 납기 보장",
       desc: "본사 직속의 거대 자동화 설비 라인과 일평균 최대 수십만 장 수준의 생산 역량을 보유하고 있습니다. 항시 넉넉한 예비 재고를 엄격 보유하여, 군부대 혹한기 훈련 등 다급한 긴급 대량 수급 의뢰에도 납기 지연 없이 안전하고 철저한 적시 직배송을 약속합니다.",
       icon: Factory,
-      bgImage: IMAGES.warehouse,
-      iconBg: "bg-white/10 text-white border border-white/20",
-      borderAccent: "hover:border-[#FF4D00]"
-    },
-    {
-      title: "철저한 품질기준 준수 및 불량 관리",
+      bgImage: IMAGES.m1,
       sub: "완벽 교환 & 환불 서비스",
       desc: "인체에 완전히 안심할 수 있는 무해 친환경 성분과 최고급 보온재, 부직포를 사용하여 만들었습니다. 혹여라도 발생할 수 있는 극소수 미세 결함에 대비하여 신속하고 유기적인 교환 및 안전 100% 환불 지원 체계를 작동합니다.",
       icon: ShieldCheck,
-      bgImage: IMAGES.productPack,
+      bgImage: IMAGES.m2,
       iconBg: "bg-white/10 text-white border border-white/20",
       borderAccent: "hover:border-[#FF4D00]"
     },
@@ -28,7 +23,7 @@ export default function CompanyAdvantages() {
       sub: "유통 비용 제로화 구현",
       desc: "본사 직영으로 물류를 컨트롤 하며 전용 택배사에 인계하여 배송해드립니다. 오후 5시까지의 모든 주문건은 당일 발송 시스템으로 운영하고 있습니다. 신속한 배송을 위해 최선을 다하겠습니다.",
       icon: Truck,
-      bgImage: IMAGES.warehouse,
+      bgImage: IMAGES.m3,
       iconBg: "bg-white/10 text-white border border-white/20",
       borderAccent: "hover:border-[#FF4D00]"
     },
@@ -37,7 +32,7 @@ export default function CompanyAdvantages() {
       sub: "일부 시그니처 베스트셀러 모델 전용",
       desc: "늦은 한파경보, 긴급 교대 점호, 장례 지원 등 촌각을 다투는 겨울철 방한 물품 기동 조달이 절실한 상황에 대응합니다. 베스트 상품 및 일부 모델에 한정해 밤 11시 전 최종 주문이 완료되면, 도심별 중계창고를 통해 다음날 배송처에 도달될 수 있도록 연계 지원합니다.",
       icon: Clock,
-      bgImage: IMAGES.campfire,
+      bgImage: IMAGES.m4,
       iconBg: "bg-white/10 text-white border border-white/20",
       borderAccent: "hover:border-[#FF4D00]"
     }

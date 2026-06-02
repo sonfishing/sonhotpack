@@ -15,4 +15,11 @@ export const IMAGES = {
   cate9: "/images/cate9.png",
   cate10: "/images/cate10.png",
   cate11: "/images/cate11.png",
+  banner1: "/images/baner1.png",
+  banner2: "/images/baner2.png",
+  banner3: "/images/baner3.png",
+  m1: "/images/m1.png",
+  m2: "/images/m2.png",
+  m3: "/images/m3.png",
+  m4: "/images/m4.png",
 };
