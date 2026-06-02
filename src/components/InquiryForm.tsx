@@ -78,7 +78,7 @@ export default function InquiryForm({
 
       // Try dynamically uploading to connected Google Sheet
       const token = getStoredAccessToken();
-      const spreadsheetId = localStorage.getItem("son_spreadsheet_id");
+      const spreadsheetId = localStorage.getItem("son_spreadsheet_id") || "1QgRkS-zhDMBtdmDJGiVmp3FJg7BhNE7ovbVc6Thx6Kg";
       if (token && spreadsheetId) {
         appendRowToSpreadsheet(spreadsheetId, token, "문의내역!A1", [
           newInquiry.id,

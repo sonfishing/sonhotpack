@@ -30,6 +30,8 @@ export default function AdminPanel({ isOpen, onClose, onInquiryChange }: AdminPa
   const [spreadsheetId, setSpreadsheetId] = useState<string | null>(null);
   const [isSheetsOperating, setIsSheetsOperating] = useState<boolean>(false);
 
+  const SPREADSHEET_ID = "1QgRkS-zhDMBtdmDJGiVmp3FJg7BhNE7ovbVc6Thx6Kg";
+
   const loadInquiries = () => {
     try {
       const existingStr = localStorage.getItem("son_inquiries");
@@ -64,7 +66,9 @@ export default function AdminPanel({ isOpen, onClose, onInquiryChange }: AdminPa
       if (token) {
         setGoogleAccessToken(token);
         setGoogleUser(fetchUserInfo());
-        setSpreadsheetId(localStorage.getItem("son_spreadsheet_id"));
+        localStorage.setItem("son_spreadsheet_id", SPREADSHEET_ID);
+        setSpreadsheetId(SPREADSHEET_ID);
+        window.open(`https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}`, "_blank");
         triggerFeedback("구글 계정과 상담 접수 시스템이 성공적으로 연결되었습니다!");
       }
     } catch (err: any) {
@@ -115,7 +119,8 @@ export default function AdminPanel({ isOpen, onClose, onInquiryChange }: AdminPa
 
   const handleSheetsFullSync = async () => {
     const token = googleAccessToken || getStoredAccessToken();
-    if (!token || !spreadsheetId) {
+    const sid = spreadsheetId || localStorage.getItem("son_spreadsheet_id") || SPREADSHEET_ID;
+    if (!token || !sid) {
       triggerFeedback("구글 스프레드시트가 연동되어 있지 않습니다.");
       return;
     }
@@ -133,7 +138,7 @@ export default function AdminPanel({ isOpen, onClose, onInquiryChange }: AdminPa
         else if (inq.status === "replied") textStatus = "회신성공";
         else if (inq.status === "completed") textStatus = "준수교부";
 
-        await appendRowToSpreadsheet(spreadsheetId, token, "문의내역!A1", [
+        await appendRowToSpreadsheet(sid, token, "문의내역!A1", [
           inq.id,
           inq.senderName,
           inq.email,
