@@ -21,7 +21,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "압도적인 용량과 두툼한 두께로 영하 20도 혹한에서도 20시간 동안 지속되는 최고의 손난로입니다.",
       tags: ["손난로 핫팩", "대용량", "주머니형"],
       features: ["국산 고용량 철분 포뮬러", "20시간 지속 고밀도 발열", "가장 많이 나가는 베스트셀러"],
-      imageUrl: IMAGES.productPack,
+      imageUrl: IMAGES.cate1,
     },
     {
       id: "product-2",
@@ -34,7 +34,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "가장 대중적이고 실용적인 규격으로 손안에 쏙 들어와 주머니 및 군 보관 장비에 최적인 손난로입니다.",
       tags: ["손난로 핫팩", "표준형", "실속 만점"],
       features: ["국산 고밀도 철분 포뮬러", "15시간 지속 발열", "표준 핫팩 규격"],
-      imageUrl: IMAGES.soldierMascot,
+      imageUrl: IMAGES.cate2,
     },
     {
       id: "product-3",
@@ -47,7 +47,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "가볍고 귀여운 미니 크기로 점퍼 주머니에 보관하거나 학생 및 아이들 등하교시 이용하기에 좋은 핫팩입니다.",
       tags: ["손난로 핫팩", "미니형", "포켓 콤팩트"],
       features: ["작지만 조밀한 순간 화력", "단기간 외출시 적합한 지속시간", "작은 크기로 보관이 용이"],
-      imageUrl: IMAGES.productPack,
+      imageUrl: IMAGES.cate3,
     },
     {
       id: "product-4",
@@ -60,7 +60,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "양손 주머니에 하나씩 쏙 넣어 균형 있게 손을 보온하도록 특수 고안된 초소형 쌍둥이 손난로입니다.",
       tags: ["손난로 핫팩", "초미니", "양손형 듀얼"],
       features: ["2개 한 세트 구성 패키지", "장갑 및 소매 포켓 특화", "사이즈에 비해 높은 발열"],
-      imageUrl: IMAGES.campfire,
+      imageUrl: IMAGES.cate4,
     },
     {
       id: "product-5",
@@ -73,7 +73,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "어깨와 목덜미 굴곡진 부위에 알맞게 고밀착 부양하여 온종일 피로와 뻐근함을 풀어주는 부착형 보온재입니다.",
       tags: ["붙이는 핫팩", "어깨 릴렉스", "인체공학 설계"],
       features: ["피부 저자극 스티커", "온열 이완 스펙 설계", "흘러내림 없는 신축 필름"],
-      imageUrl: IMAGES.campfire,
+      imageUrl: IMAGES.cate5,
     },
     {
       id: "product-6",
@@ -86,7 +86,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "등, 허리, 가슴 등 의류 내의 안쪽에 깔끔하게 고정하여 하루 내내 균일한 코어 온도를 수호하는 전통적 파스형 핫팩입니다.",
       tags: ["붙이는 핫팩", "파스형", "내의 밀착식"],
       features: ["에어 스루 통기 전용 막", "의류 훼손 없는 소프트 접착력", "인체 온도 최적화 정온 유지"],
-      imageUrl: IMAGES.soldierMascot,
+      imageUrl: IMAGES.cate6,
     },
     {
       id: "product-7",
@@ -99,7 +99,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "군화 및 등산화 전체 깔창 크기로 제작되어 발뒤꿈치부터 가락 끝까지 폭넓고 은은하게 보온을 지켜주는 270mm 남성용 깔창핫팩입니다.",
       tags: ["발 핫팩", "깔창핫팩", "남성용 270mm"],
       features: ["신발 바닥 완벽 장착 가능", "발바닥 굴곡 모양 엠보싱", "압력 저항형 균일 발열 기술"],
-      imageUrl: IMAGES.warehouse,
+      imageUrl: IMAGES.cate7,
     },
     {
       id: "product-8",
@@ -112,7 +112,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "단화, 부츠, 소형 신발에 부드럽게 안착되어 동상을 원천 예방하고 온기를 순환시키는 여성용 규격 250mm 깔창형 핫팩입니다.",
       tags: ["발 핫팩", "깔창핫팩", "여성용 250mm"],
       features: ["신발 바닥 완벽 장착 가능", "신발 내 습기 배출 특수 가공", "저온 화상 예방 안심 발열 곡선"],
-      imageUrl: IMAGES.warehouse,
+      imageUrl: IMAGES.cate8,
     },
     {
       id: "product-9",
@@ -125,7 +125,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "가장 취약하고 쉽게 어는 양말 앞코(발가락 부분)에 집중적으로 밀착 부착하도록 콤팩트하게 형상화된 스티커 핫팩입니다.",
       tags: ["발 핫팩", "발가락 전용", "스티커형 패치"],
       features: ["우수한 자가  스티커 접착", "양말 앞면에 붙이는 아치 쉐입", "발끝 부위에  맞춤 설계된 2개입"],
-      imageUrl: IMAGES.productPack,
+      imageUrl: IMAGES.cate9,
     },
     {
       id: "product-10",
@@ -138,7 +138,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "초대형 방석 크기로 설계되어 혹한기 초소 감시 활동 및 낚시, 아웃도어 의자에 깔고 앉아 엉덩이와 전신으로 타고 오르는 열기를 체감하세요.",
       tags: ["기타", "방석형", "초대형 400g"],
       features: ["9개의 주머니핫팩을 연결한 구조", "터짐 방지 전술 직조 코팅 부직포", "대용량으로 넓은 면적에 사용합니다."],
-      imageUrl: IMAGES.warehouse,
+      imageUrl: IMAGES.cate10,
     },
     {
       id: "product-11",
@@ -151,7 +151,7 @@ export default function ProductCatalog({ onSelectProductForInquiry }: ProductCat
       description: "대용량, 미니, 방석, 붙이는 패치, 발 핫팩까지 온가족이 다양한 핫팩 구성으로 상황에따라 사용할 수 있도록 구성한 프리미엄 세트입니다.",
       tags: ["기타", "패밀리 세트", "종합 모듬"],
       features: ["손난로, 깔창, 붙이는 패키지 올인원", "선물용으로 적합한 구성 ", "대량 구매 단가 극소화 세트"],
-      imageUrl: IMAGES.soldierMascot,
+      imageUrl: IMAGES.cate11,
     },
   ];
 
