@@ -26,9 +26,7 @@ export default function CompanyAdvantages() {
     {
       title: "물류창고 직배송 인프라 시스템",
       sub: "유통 비용 제로화 구현",
-      desc: "본사 직영으로 물류를 컨트롤 하며 전용 택배사에 인계하여 배송해드립니다.
-            오후 5시까지의 모든 주문건은 당일 발송 시스템으로 운영하고 있습니다.
-            신속한 배송을 위해 최선을 다하겠습니다.",
+      desc: "본사 직영으로 물류를 컨트롤 하며 전용 택배사에 인계하여 배송해드립니다. 오후 5시까지의 모든 주문건은 당일 발송 시스템으로 운영하고 있습니다. 신속한 배송을 위해 최선을 다하겠습니다.",
       icon: Truck,
       bgImage: IMAGES.warehouse,
       iconBg: "bg-white/10 text-white border border-white/20",
