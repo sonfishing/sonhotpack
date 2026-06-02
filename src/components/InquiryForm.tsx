@@ -148,26 +148,26 @@ export default function InquiryForm({
               <h2 className="text-3xl sm:text-4xl font-sans font-black text-black mt-4 tracking-tighter uppercase leading-tight">
                 단 한 장도 정확한 날짜에, <br />
                 <span className="text-[#1F3821] border-b-2 border-[#FF4D00] pb-1">
-                  본부 영내 무사 직배송
+                  무사 직배송
                 </span>
               </h2>
               <div className="w-12 h-[2px] bg-[#1F3821] mt-6" />
               <p className="text-stone-700 text-xs sm:text-sm leading-relaxed mt-6 font-medium">
-                '손일병 핫팩' 생산업체인 <strong>손피싱</strong>은 최적의 단가 및 군인조달 맞춤 혜택을 제공합니다. 행정 서류 및 공정 견적서 발송, 세금 계산서 발행, 관납 결제 예산 등 모든 장병 복지 행정 절차를 원스톱으로 신속히 지원해 드립니다.
+                '손일병 핫팩' 생산업체인 <strong>손피싱</strong>은 최적의 단가 및 맞춤 혜택을 제공합니다. 행정 서류 및 견적서 발송, 세금 계산서 발행, 관납 결제 예산 등 모든 복지 행정 절차를 원스톱으로 신속히 지원해 드립니다.
               </p>
             </div>
 
             {/* Quick credentials listed - Sharp corners layout */}
             <div className="bg-[#FAFBF9] border border-[#1F3821]/10 rounded-none p-6 space-y-5 shadow-sm">
               <h3 className="text-xs font-black text-[#1F3821] uppercase tracking-widest font-mono flex items-center mb-1">
-                <Calculator className="w-4 h-4 text-[#FF4D00] mr-2" /> 대량 협상 특수 프로필
+                <Calculator className="w-4 h-4 text-[#FF4D00] mr-2" /> 대량 협상 안내 : 0507-4345-2755
               </h3>
 
               <div id="quote-benefit-1" className="flex items-start">
                 <Truck className="w-5 h-5 text-[#FF4D00] mr-3 shrink-0 mt-0.5" />
                 <div className="text-xs text-stone-700 leading-normal font-medium">
-                  <strong className="text-black font-black">전국 연대/대대급 주둔지 직배송</strong>
-                  <br /> 격오지 GP, GOP 초소 및 연대 물류 보관소까지 무너지지 않는 완벽한 특수 방수 패키징 포장 후 완포 발송
+                  <strong className="text-black font-black">전국 직배송</strong>
+                  <br /> 대도시는 물론 택배가 가는 모든 곳에 무료배송을 해드리며, 대량 납품건인 경우에는 직접 배차하여 물건을 목적지까지 배송해드립니다.
                 </div>
               </div>
 
@@ -183,7 +183,7 @@ export default function InquiryForm({
                 <Mail className="w-5 h-5 text-[#1F3821] mr-3 shrink-0 mt-0.5" />
                 <div className="text-xs text-stone-700 leading-normal font-medium">
                   <strong className="text-black font-black">실시간 이메일/문자 행정 알림 서비스</strong>
-                  <br /> 견적의뢰 제출이 수신된 즉시 손피싱 전담 세일즈 팀원이 매칭되어 최저 단가 회신서를 PDF로 메신저 즉시 전송
+                  <br /> 견적의뢰 제출이 수신된 즉시 손피싱 전담 세일즈 팀원이 매칭되어 최적가 회신서를 PDF, 이메일 및 메신저로 발송해드립니다.
                 </div>
               </div>
             </div>

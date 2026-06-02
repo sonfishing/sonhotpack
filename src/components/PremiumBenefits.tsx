@@ -30,7 +30,7 @@ export default function PremiumBenefits() {
               </h2>
             </div>
             <p className="text-stone-600 text-xs sm:text-sm font-semibold sm:max-w-xs leading-relaxed text-shadow-sm">
-              손피싱은 단순 핫팩 중개를 넘어, 사용자의 확실한 방온 편익과 만족을 보장해드리기 위하여 3가지 공식 혜택 제도를 엄정히 준수 운영합니다.
+              손피싱은 단순 핫팩 판매를 넘어, 사용자의 확실한 방온 편익과 만족을 보장해드리기 위한 고객 혜택을 안내해드립니다.
             </p>
           </div>
 

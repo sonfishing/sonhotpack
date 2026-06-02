@@ -17,7 +17,7 @@ export default function CompanyAdvantages() {
     {
       title: "철저한 품질기준 준수 및 불량 관리",
       sub: "완벽 교환 & 환불 서비스",
-      desc: "인체에 완전히 안심할 수 있는 무무해 친환경 성분과 최고급 보온재 전용 국내 부직포 합지 필터만을 가름하여 가동합니다. 혹여라도 발생할 수 있는 극소수 미세 결함에 대비하여 신속하고 유기적인 교환 및 안전 100% 환불 지원 체계를 작동합니다.",
+      desc: "인체에 완전히 안심할 수 있는 무해 친환경 성분과 최고급 보온재, 부직포를 사용하여 만들었습니다. 혹여라도 발생할 수 있는 극소수 미세 결함에 대비하여 신속하고 유기적인 교환 및 안전 100% 환불 지원 체계를 작동합니다.",
       icon: ShieldCheck,
       bgImage: IMAGES.productPack,
       iconBg: "bg-white/10 text-white border border-white/20",
@@ -26,7 +26,9 @@ export default function CompanyAdvantages() {
     {
       title: "물류창고 직배송 인프라 시스템",
       sub: "유통 비용 제로화 구현",
-      desc: "본사 직영의 최첨단 제3공인 스마트 항온물류창고에서 수집 가동되는 직납 라인을 완비하였습니다. 불필요하고 조악한 중간 다중 유통마진 거품 구조를 과감히 전면 배거함으로써, 단 원 단위의 조달 가격 경쟁력을 실현하고 거품 없는 유통을 보증합니다.",
+      desc: "본사 직영으로 물류를 컨트롤 하며 전용 택배사에 인계하여 배송해드립니다.
+            오후 5시까지의 모든 주문건은 당일 발송 시스템으로 운영하고 있습니다.
+            신속한 배송을 위해 최선을 다하겠습니다.",
       icon: Truck,
       bgImage: IMAGES.warehouse,
       iconBg: "bg-white/10 text-white border border-white/20",
@@ -35,7 +37,7 @@ export default function CompanyAdvantages() {
     {
       title: "밤 11시 조기 결제 완료시 익일 수령",
       sub: "일부 시그니처 베스트셀러 모델 전용",
-      desc: "당장 야간 초소 투입, 긴급 교대 점호, 장례 지원 등 촌각을 다투는 겨울철 방한 물품 기동 조달이 절실한 상황에 대응합니다. 베스트 상품 및 일부 모델에 한정해 밤 11시 전 최종 주문이 완료되면, 해가 뜨는 다음날 아침 배송처에 도달될 수 있도록 연계 지원합니다.",
+      desc: "늦은 한파경보, 긴급 교대 점호, 장례 지원 등 촌각을 다투는 겨울철 방한 물품 기동 조달이 절실한 상황에 대응합니다. 베스트 상품 및 일부 모델에 한정해 밤 11시 전 최종 주문이 완료되면, 도심별 중계창고를 통해 다음날 배송처에 도달될 수 있도록 연계 지원합니다.",
       icon: Clock,
       bgImage: IMAGES.campfire,
       iconBg: "bg-white/10 text-white border border-white/20",
@@ -63,12 +65,11 @@ export default function CompanyAdvantages() {
             SONFISHING LOGISTICS & MANUFACTURE
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-black text-white mt-4 tracking-tighter uppercase leading-none text-shadow-md">
-            손일병 핫팩의 <span className="text-[#FF4D00]">독보적인 물류, 품질 관리 시스템</span>
+            손일병 핫팩의<br /><span className="text-[#FF4D00]">독보적인 물류, 품질 관리 시스템</span>
           </h2>
           <div className="w-12 h-[2px] bg-[#FF4D00] mx-auto mt-6" />
           <p className="text-white/80 font-sans leading-relaxed text-sm sm:text-base mt-6 font-medium text-shadow-sm">
-            단순 중개 도매상과 비교를 거부합니다. 국내 최고 규격의 제조 공장과 
-            다이렉트 스마트 풀필먼트 물류 거점을 완전 직영 가동하는 신뢰의 제조사입니다.
+            국내 최고 규격의 제조 공장과 택배회사와 다이렉트 스마트 풀필먼트 물류 거점을 운영하고 있습니다.
           </p>
         </div>
 

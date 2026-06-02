@@ -74,12 +74,11 @@ export default function BrandStats() {
             VERIFIED CUSTOMER TRUST INDEX
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-black text-black mt-4 tracking-tighter uppercase leading-none text-shadow-sm">
-            실제 구매자가 입증한 <span className="text-[#1F3821]">생생하고 정직한 평점 통계</span>
+            실제 구매자가 입증한<br /><span className="text-[#1F3821]">생생하고 정직한 평점 통계</span>
           </h2>
           <div className="w-12 h-[2px] bg-[#1F3821] mx-auto mt-6" />
           <p className="text-[#1F3821]/80 font-sans leading-relaxed text-sm sm:text-base mt-6 font-medium text-shadow-sm">
-            가혹한 동계 영하 날씨를 완벽하게 버텨내며 실구매자가 작성해주신 압도적인 실제 상품후기와 평점입니다.
-            품질의 수준차를 숫자로 완벽히 증명합니다.
+            가혹한 동계 영하 날씨를 완벽하게 버텨낸 실구매자분들의<br />생생한 상품후기와 평점을 숫자로 증명합니다.
           </p>
         </div>
 
@@ -108,7 +107,7 @@ export default function BrandStats() {
               </h3>
               
               <p className="text-white/95 text-xs sm:text-sm leading-relaxed font-semibold text-shadow-sm">
-                쿠팡 공식 실구매 가입자들이 직접 작성한 무려 <span className="font-black text-yellow-300 underline decoration-wavy decoration-yellow-300 text-shadow-sm">17,000건의 생생한 상품 평가</span> 중, 가혹한 동계 영하 날씨 속에서 손일병 핫팩을 착용하고 극찬을 아끼지 않은 비율이 담겨있습니다.
+                쿠팡 공식 실구매고객분들이 직접 작성한 <span className="font-black text-yellow-300 underline decoration-wavy decoration-yellow-300 text-shadow-sm">17,000건의 생생한 상품 평가</span>가 증명합니다. 가혹한 동계 영하 날씨 속에서도 손일병 핫팩을 착용한 대부분의 고객분들이 극찬을 보내주셨습니다.
               </p>
 
               <div className="pt-6 border-t border-white/20 flex items-center justify-between gap-4">
@@ -118,7 +117,7 @@ export default function BrandStats() {
                 </div>
                 <div className="text-right">
                   <span className="block text-[8px] font-bold text-white/60 uppercase tracking-widest leading-none font-mono text-shadow-sm">구매자의 평가 회신</span>
-                  <span className="text-xl sm:text-2xl font-mono font-black text-yellow-300 mt-1.5 block text-shadow-md">구매자의 96%가 "최고/좋음"</span>
+                  <span className="text-xl sm:text-2xl font-mono font-black text-yellow-300 mt-1.5 block text-shadow-md">96%가 "최고/좋음"</span>
                 </div>
               </div>
             </div>
@@ -146,7 +145,7 @@ export default function BrandStats() {
               </h3>
               
               <p className="text-white/95 text-xs sm:text-sm leading-relaxed font-semibold text-shadow-sm">
-                네이버 스마트스토어에서 한파 대비 자위 구매가들이 성원해주신 <span className="font-black text-yellow-300 underline decoration-wavy decoration-yellow-300 text-shadow-sm">67,000건의 경이로운 자체 리뷰 누적 수량</span>입니다. 실구매자의 높은 평점이 제품 품질 경쟁력을 직배 입증합니다.
+                네이버 스마트스토어에서 한파 대비 구매고객분들이 남겨주신 <span className="font-black text-yellow-300 underline decoration-wavy decoration-yellow-300 text-shadow-sm">67,000건의 경이로운 자체 리뷰</span>가 쌓였습니다. 실구매자의 높은 평점이 제품 품질을 입증합니다.
               </p>
 
               <div className="pt-6 border-t border-white/20 flex items-center justify-between gap-4">
@@ -172,10 +171,10 @@ export default function BrandStats() {
             </div>
             <div className="font-sans">
               <h4 className="text-base sm:text-lg font-black text-black text-shadow-sm leading-tight">
-                연간 1,000만 장 이상 판매되는 검증된 손일병 핫팩
+                연간 1,000만 장 이상 판매되는 손일병 핫팩
               </h4>
               <p className="text-xs sm:text-sm text-stone-600 mt-2 max-w-2xl leading-relaxed font-semibold">
-                정부, 관공서는 물론 군부대 보급본부, 대형 산업 건설 현장, 각종 동호회나 소대 훈련, 정기 모임까지 안정적인 방한 성능을 인정받아 지속적으로 대량 조달 납품되고 있습니다.
+                정부, 관공서, 군부대 보급본부, 대형 산업 건설 현장은 물론 각종 동호회와 정기 모임까지 안정적인 방한 성능을 인정받아 지속 대량 납품되고 있습니다.
               </p>
             </div>
           </div>
@@ -183,7 +182,7 @@ export default function BrandStats() {
           <div className="text-center md:text-right shrink-0 bg-[#FF4D00] text-white px-8 py-6 border border-[#FF4D00]/20 w-full md:w-auto shadow-md">
             <p className="text-[10px] font-black text-white/80 uppercase tracking-widest font-mono leading-none text-shadow-sm">ANNUAL SALES VOLUME</p>
             <p className="text-3xl sm:text-4xl font-mono font-black text-white mt-3 block text-shadow-md tracking-tight">
-              <AnimatedCounter end={10000000} duration={3000} /> 장 돌파
+              <AnimatedCounter end={10000000} duration={3000} />장 돌파
             </p>
           </div>
         </div>
