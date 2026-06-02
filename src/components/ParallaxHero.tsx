@@ -12,6 +12,7 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const windRef = useRef<number>(0);
+  const isHovering = useRef(false);
 
   // Scroll tracking
   useEffect(() => {
@@ -170,9 +171,10 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
     windRef.current = direction === "left" ? -15 : 15;
   };
 
-  // Auto transition slides
+  // Auto transition slides (paused on hover)
   useEffect(() => {
     const timer = setInterval(() => {
+      if (isHovering.current) return;
       triggerWindDrift("left");
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
@@ -199,6 +201,8 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
       ref={containerRef}
       id="parallax-container"
       className="relative w-full h-[100vh] bg-white overflow-hidden flex flex-col justify-between"
+      onMouseEnter={() => { isHovering.current = true; }}
+      onMouseLeave={() => { isHovering.current = false; }}
     >
       {/* 1. Snowflakes Canvas Layer */}
       <canvas
