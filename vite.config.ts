@@ -12,8 +12,11 @@ export default defineConfig(() => {
       {
         name: 'cloudflare-pages',
         closeBundle() {
-          fs.copyFileSync('_headers', 'dist/_headers');
-          fs.copyFileSync('_redirects', 'dist/_redirects');
+          const root = process.cwd();
+          const out = path.resolve(root, 'dist');
+          if (!fs.existsSync(out)) fs.mkdirSync(out, { recursive: true });
+          fs.copyFileSync(path.resolve(root, '_headers'), path.resolve(out, '_headers'));
+          fs.copyFileSync(path.resolve(root, '_redirects'), path.resolve(out, '_redirects'));
         },
       },
     ],
