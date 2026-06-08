@@ -131,7 +131,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-white/40 text-xs leading-relaxed max-w-sm">
-                '손일병 핫팩'은 아웃도어 가공 기술의 자부심을 가진 생산업체 <strong>'손피싱'</strong>의 국가 방위 지원 동계 방한복지 주력 상표입니다. 영하 20도 ROK 국경선과 산악 GOP 훈련 장병들의 동상을 완전 격퇴합니다.
+                '손일병 핫팩' 은 대한민국의 추운 겨울을 막아주는 방한용 보온대로서 낚시전문 브랜드 '손피싱'의 핫팩 브랜드입니다.
               </p>
               
               <div className="flex items-center gap-2 pt-2">
@@ -146,12 +146,12 @@ export default function App() {
 
             {/* Quick specifications lists link */}
             <div className="md:col-span-3 space-y-3">
-              <h4 className="text-xs font-black text-white uppercase tracking-wider font-mono">납품 지휘 채널</h4>
+              <h4 className="text-xs font-black text-white uppercase tracking-wider font-mono">회사 안내</h4>
               <ul className="space-y-1.5 text-xs text-white/40">
-                <li>생산업체: (주) 손피싱 물류 생산 기지</li>
-                <li>대표 이메일: <a href="mailto:ssong8730@gmail.com" className="text-[#FF4D00] hover:underline">ssong8730@gmail.com</a></li>
-                <li>대량 조달 총괄 행정실: 1644-xxxx (연중무휴)</li>
-                <li>안전 점검: 국가 위해 물질 안전 적합인증</li>
+                <li>판매처 : (주)손피싱</li>
+                <li>대표이메일 : <a href="mailto:sonfishing@naver.com" className="text-[#FF4D00] hover:underline">sonfishing@naver.com</a></li>
+                <li>대표연락처 : 010-4345-2755</li>
+                <li>사업자번호 : 459-81-00986</li>
               </ul>
             </div>
 
