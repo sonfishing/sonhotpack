@@ -110,7 +110,8 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
         <>
           평균 온도 <span className="font-extrabold text-[#FF4D00]">65℃</span>, 최대 최고 온도{" "}
           <span className="font-extrabold text-[#FF4D00]">70℃</span>!
-          <br className="hidden sm:inline" /> 20시간 이상 꺼지지 않는 압도적인 지속 온기로 대한민국 국군 장병의 혹한기 작전을 수호합니다.
+          <br />20시간 이상 꺼지지 않는 압도적인 지속 온기로
+          <br />대한민국 국군 장병의 혹한기 작전을 수호합니다.
         </>
       ),
       btn1Text: "상세 특장점 확인하기",
@@ -128,8 +129,8 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
       bgUrl: IMAGES.banner2,
       desc: (
         <>
-          주머니형 핫팩 <span className="font-black text-[#FF4D00] underline">30매당 전용 방한 파우치 1개</span>를 무상 무조건 지급해 드립니다.
-          <br className="hidden sm:inline" /> ※ 단, [손난로 핫팩] 180g 대용량핫팩 50매 구매 고객에는 파우치 2매를 특별 증정합니다!
+          주머니형 핫팩 30매당 전용 방한 파우치
+          <br />1매 무상지급해 드립니다.
         </>
       ),
       btn1Text: "파우치 증정 혜택 보기",
@@ -150,8 +151,9 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
       bgUrl: IMAGES.banner3,
       desc: (
         <>
-          소량부터 군부대 단체용 벌크 단위까지, 검증된 정품 라인업을 온라인 공식 할인 혜택가로 공급합니다.
-          <br className="hidden sm:inline" /> 아래 카탈로그에서 손난로, 파스형, 깔창형, 미니핫팩 전 품목의 특가를 지금 바로 만나보고 선택하십시오.
+          소량부터 군부대 단체용 벌크 단위까지, 
+          <br />검증된 정품 라인업을 온라인 공식 할인 혜택가로 공급합니다.
+          <br />아래 카탈로그 링크로 접속하시면 할인가격으로 구매가능합니다.
         </>
       ),
       btn1Text: "구매하기 (카탈로그로 이동)",
