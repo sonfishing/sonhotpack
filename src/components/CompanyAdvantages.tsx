@@ -109,7 +109,7 @@ export default function CompanyAdvantages() {
                       {adv.sub}
                     </span>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-black text-white tracking-tight leading-snug text-shadow-white group-hover:text-[#FF4D00] transition-colors">
+                  <h3 className="text-lg sm:text-xl font-black text-black tracking-tight leading-snug group-hover:text-[#FF4D00] transition-colors">
                     {adv.title}
                   </h3>
                 </div>
