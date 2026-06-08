@@ -13,6 +13,7 @@ export default function InquiryForm({
   selectedProductName,
   onInquirySubmitted,
 }: InquiryFormProps) {
+  const WEBHOOK_URL = "https://api.webhook.com/v1/mountain-club-son/9z6Y7vGDnEGn";
   const [senderName, setSenderName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -56,71 +57,72 @@ export default function InquiryForm({
 
     setIsSubmitting(true);
 
-    // Simulate sending email to manager
+    const newInquiry: Inquiry = {
+      id: "INQ-" + Math.floor(Math.random() * 900000 + 100000),
+      senderName,
+      email,
+      phone,
+      productName,
+      quantity: Number(quantity),
+      message,
+      status: "pending",
+      createdAt: new Date().toISOString(),
+    };
+
+    // POST to webhook
+    fetch(WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newInquiry),
+    }).catch((err) => console.error("Webhook POST failed:", err));
+
+    // Retrieve existing from localStorage
+    const existingStr = localStorage.getItem("son_inquiries");
+    const existing: Inquiry[] = existingStr ? JSON.parse(existingStr) : [];
+    existing.unshift(newInquiry);
+    localStorage.setItem("son_inquiries", JSON.stringify(existing));
+
+    // Try dynamically uploading to connected Google Sheet
+    const token = getStoredAccessToken();
+    const spreadsheetId = localStorage.getItem("son_spreadsheet_id") || "1QgRkS-zhDMBtdmDJGiVmp3FJg7BhNE7ovbVc6Thx6Kg";
+    if (token && spreadsheetId) {
+      appendRowToSpreadsheet(spreadsheetId, token, "문의내역!A1", [
+        newInquiry.id,
+        newInquiry.senderName,
+        newInquiry.email,
+        newInquiry.phone,
+        newInquiry.productName,
+        newInquiry.quantity,
+        newInquiry.message || "",
+        "대기",
+        new Date(newInquiry.createdAt).toLocaleString("ko-KR"),
+        ""
+      ]).then(() => {
+        console.info("Google Sheet Auto-Write Succeeded");
+        newInquiry.notes = "[자동] 구글 스프레드시트 기록완료";
+        const updated = [newInquiry, ...existing.slice(1)];
+        localStorage.setItem("son_inquiries", JSON.stringify(updated));
+      }).catch((err) => {
+        console.error("Google Sheet Auto-Write Failed:", err);
+      });
+    }
+
+    // Reset
+    setSenderName("");
+    setEmail("");
+    setPhone("");
+    setProductName("");
+    setQuantity("");
+    setMessage("");
+    setErrors({});
+    setIsSubmitting(false);
+    setIsSuccess(true);
+
+    onInquirySubmitted();
+
     setTimeout(() => {
-      const newInquiry: Inquiry = {
-        id: "INQ-" + Math.floor(Math.random() * 900000 + 100000),
-        senderName,
-        email,
-        phone,
-        productName,
-        quantity: Number(quantity),
-        message,
-        status: "pending",
-        createdAt: new Date().toISOString(),
-      };
-
-      // Retrieve existing from localStorage
-      const existingStr = localStorage.getItem("son_inquiries");
-      const existing: Inquiry[] = existingStr ? JSON.parse(existingStr) : [];
-      existing.unshift(newInquiry);
-      localStorage.setItem("son_inquiries", JSON.stringify(existing));
-
-      // Try dynamically uploading to connected Google Sheet
-      const token = getStoredAccessToken();
-      const spreadsheetId = localStorage.getItem("son_spreadsheet_id") || "1QgRkS-zhDMBtdmDJGiVmp3FJg7BhNE7ovbVc6Thx6Kg";
-      if (token && spreadsheetId) {
-        appendRowToSpreadsheet(spreadsheetId, token, "문의내역!A1", [
-          newInquiry.id,
-          newInquiry.senderName,
-          newInquiry.email,
-          newInquiry.phone,
-          newInquiry.productName,
-          newInquiry.quantity,
-          newInquiry.message || "",
-          "대기",
-          new Date(newInquiry.createdAt).toLocaleString("ko-KR"),
-          ""
-        ]).then(() => {
-          console.info("Google Sheet Auto-Write Succeeded");
-          // Add a small flag that it succeeded in sheets
-          newInquiry.notes = "[자동] 구글 스프레드시트 기록완료";
-          const updated = [newInquiry, ...existing.slice(1)];
-          localStorage.setItem("son_inquiries", JSON.stringify(updated));
-        }).catch((err) => {
-          console.error("Google Sheet Auto-Write Failed:", err);
-        });
-      }
-
-      // Reset
-      setSenderName("");
-      setEmail("");
-      setPhone("");
-      setProductName("");
-      setQuantity("");
-      setMessage("");
-      setErrors({});
-      setIsSubmitting(false);
-      setIsSuccess(true);
-
-      // Notify parent
-      onInquirySubmitted();
-
-      // Clear success notification after 6 seconds
-      setTimeout(() => {
-        setIsSuccess(false);
-      }, 6000);
-    }, 1500);
+      setIsSuccess(false);
+    }, 6000);
   };
 
   return (
