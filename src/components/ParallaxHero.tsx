@@ -195,7 +195,6 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
 
   // Soft limit values to avoid excessive displacement in preview
   const bgTransform = Math.min(scrollY * 0.45, 300);
-  const midTransform = Math.min(scrollY * 0.25, 180);
   const textTransform = Math.min(scrollY * 0.15, 120);
 
   return (
@@ -222,33 +221,7 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
         }}
       />
 
-      {/* 3. Parallax Midground: Floating Tactical Labels with sharp geometric structure */}
-      <div
-        id="midground-parallax-hud"
-        className="absolute inset-x-0 top-[18%] z-20 max-w-7xl mx-auto px-4 pointer-events-none flex flex-col md:flex-row justify-between items-start md:items-center"
-        style={{
-          transform: `translate3d(0, -${midTransform}px, 0)`,
-          opacity: Math.max(1 - scrollY / 500, 0),
-        }}
-      >
-        {/* Left HUD elements with sharp corners */}
-        <div className="flex items-center space-x-3 bg-white/95 border border-[#1F3821]/20 px-4 py-3 rounded-none text-black shadow-xl mb-4 md:mb-0">
-          <div className="w-2.5 h-2.5 bg-[#FF4D00] rounded-none animate-ping" />
-          <div className="text-left font-sans">
-            <p className="text-[9px] font-extrabold text-[#1F3821] leading-none uppercase tracking-widest">ROK ARMY SPEC</p>
-            <p className="text-xs font-black tracking-tighter text-black leading-tight mt-0.5">혹한기 군부대 공식 납품</p>
-          </div>
-        </div>
-
-        {/* Right HUD elements with sharp corners */}
-        <div className="flex items-center space-x-3 bg-white/95 border border-[#1F3821]/20 px-4 py-3 rounded-none text-black shadow-xl">
-          <div className="w-2.5 h-2.5 bg-[#1F3821] rounded-none" />
-          <div className="text-left font-sans">
-            <p className="text-[9px] font-extrabold text-[#1F3821] leading-none uppercase tracking-widest">PREMIUM QC GOOD QUALITY</p>
-            <p className="text-xs font-black tracking-tighter text-[#1F3821] leading-tight mt-0.5">손피싱 생산 100% 국산명품</p>
-          </div>
-        </div>
-      </div>
+      {/* 3. (removed) */}
 
       {/* Left Navigation Arrow */}
       <button

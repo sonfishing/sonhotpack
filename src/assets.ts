@@ -23,4 +23,5 @@ export const IMAGES = {
   m3: "/images/m3.png",
   m4: "/images/m4.png",
   sonLogo: "/images/son_logo.png",
+  sonLogoWh: "/images/son_logo_wh.png",
 };

@@ -10,6 +10,7 @@ import InquiryForm from "./components/InquiryForm";
 import AdminPanel from "./components/AdminPanel";
 import MouseFlameEffect from "./components/MouseFlameEffect";
 import { MenuSection, Inquiry } from "./types";
+import { IMAGES } from "./assets";
 import { Flame, Award, ShieldCheck } from "lucide-react";
 
 export default function App() {
@@ -123,12 +124,11 @@ export default function App() {
             {/* Signature logo and desc with strict geometric S box */}
             <div className="md:col-span-5 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#FF4D00] flex items-center justify-center font-black text-black select-none rounded-none text-base">
-                  S
-                </div>
-                <span className="text-base font-black text-white uppercase tracking-tight">
-                  손일병 핫팩 공식 사이트
-                </span>
+                <img
+                  src={IMAGES.sonLogoWh}
+                  alt="손일병 핫팩"
+                  className="h-8 w-auto object-contain"
+                />
               </div>
               <p className="text-white/40 text-xs leading-relaxed max-w-sm">
                 '손일병 핫팩' 은 대한민국의 추운 겨울을 막아주는 방한용 보온대로서 낚시전문 브랜드 '손피싱'의 핫팩 브랜드입니다.

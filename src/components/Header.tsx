@@ -56,7 +56,7 @@ export default function Header({
             className="flex items-center cursor-pointer group"
           >
             <img
-              src={IMAGES.sonLogo}
+              src={isScrolled ? IMAGES.sonLogo : IMAGES.sonLogoWh}
               alt="손일병 핫팩"
               className="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-300"
             />
