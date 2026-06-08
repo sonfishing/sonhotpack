@@ -12,7 +12,7 @@ export default function InquiryForm({
   selectedProductName,
   onInquirySubmitted,
 }: InquiryFormProps) {
-  const WEBHOOK_URL = "https://api.webhook.com/v1/mountain-club-son/9z6Y7vGDnEGn";
+  const WEBHOOK_URL = "https://api.webhook.com/v1/sonhotpack_contact_form/75a53928-fa7a-472d-a8ab-7cd801520cfe";
   const [senderName, setSenderName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
