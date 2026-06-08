@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Flame, ShieldCheck, Mail } from "lucide-react";
 import { MenuSection } from "../types";
+import { IMAGES } from "../assets";
 
 interface HeaderProps {
   activeSection: MenuSection;
@@ -48,23 +49,17 @@ export default function Header({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo with strict geometric balance S box */}
+          {/* Logo */}
           <div
             id="header-logo"
             onClick={() => handleNavClick("hero")}
-            className="flex items-center gap-3 cursor-pointer group"
+            className="flex items-center cursor-pointer group"
           >
-            <div className="w-10 h-10 bg-[#1F3821] text-[#FF4D00] flex items-center justify-center font-black text-xl select-none transition-transform group-hover:scale-105 duration-300">
-              S
-            </div>
-            <div className="text-left leading-none">
-              <span className={`text-lg font-extrabold tracking-tighter block transition-colors ${isScrolled ? "text-black" : "text-white"}`}>
-                손일병 <span className="text-[#FF4D00]">핫팩</span>
-              </span>
-              <span className={`block text-[9px] font-mono tracking-widest uppercase font-black transition-colors ${isScrolled ? "text-stone-500" : "text-white/60"}`}>
-                MILITARY GRADE HEATING
-              </span>
-            </div>
+            <img
+              src={IMAGES.sonLogo}
+              alt="손일병 핫팩"
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-300"
+            />
           </div>
 
           {/* Desktop Navigation */}
