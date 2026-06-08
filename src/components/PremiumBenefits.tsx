@@ -66,7 +66,7 @@ export default function PremiumBenefits() {
                   <span className="text-[8px] bg-[#1F3821] text-white px-1.5 py-0.5 rounded-none font-bold font-mono uppercase leading-none">Express</span>
                 </div>
                 <p className="text-[11px] sm:text-xs text-stone-700 leading-relaxed mt-3.5 font-semibold">
-                  오전 11시 이전 결제 확인 인입 건에 한하여, <span className="font-black text-[#1F3821]">다음날 도착 완료</span>를 원칙으로 신속 배송 물류라인이 직접 가동 배정됩니다. (도심지 기준)
+                  오후 11시 이전 결제 확인건에 한해 <span className="font-black text-[#1F3821]">다음날 도착 완료</span>를 원칙으로 신속 배송 물류라인이 직접 가동 배정됩니다. (도심지 기준, 주머니핫팩 위주)
                 </p>
               </div>
             </div>

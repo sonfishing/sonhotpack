@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Inquiry } from "../types";
 import { Mail, Phone, Calculator, ClipboardList, Send, CheckCircle2, Truck } from "lucide-react";
 import { motion } from "motion/react";
-import { getStoredAccessToken, appendRowToSpreadsheet } from "../lib/sheetsService";
 
 interface InquiryFormProps {
   selectedProductName: string;
@@ -81,31 +80,6 @@ export default function InquiryForm({
     const existing: Inquiry[] = existingStr ? JSON.parse(existingStr) : [];
     existing.unshift(newInquiry);
     localStorage.setItem("son_inquiries", JSON.stringify(existing));
-
-    // Try dynamically uploading to connected Google Sheet
-    const token = getStoredAccessToken();
-    const spreadsheetId = localStorage.getItem("son_spreadsheet_id") || "1QgRkS-zhDMBtdmDJGiVmp3FJg7BhNE7ovbVc6Thx6Kg";
-    if (token && spreadsheetId) {
-      appendRowToSpreadsheet(spreadsheetId, token, "문의내역!A1", [
-        newInquiry.id,
-        newInquiry.senderName,
-        newInquiry.email,
-        newInquiry.phone,
-        newInquiry.productName,
-        newInquiry.quantity,
-        newInquiry.message || "",
-        "대기",
-        new Date(newInquiry.createdAt).toLocaleString("ko-KR"),
-        ""
-      ]).then(() => {
-        console.info("Google Sheet Auto-Write Succeeded");
-        newInquiry.notes = "[자동] 구글 스프레드시트 기록완료";
-        const updated = [newInquiry, ...existing.slice(1)];
-        localStorage.setItem("son_inquiries", JSON.stringify(updated));
-      }).catch((err) => {
-        console.error("Google Sheet Auto-Write Failed:", err);
-      });
-    }
 
     // Reset
     setSenderName("");
