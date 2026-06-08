@@ -11,6 +11,11 @@ export default function CompanyAdvantages() {
       desc: "본사 직속의 거대 자동화 설비 라인과 일평균 최대 수십만 장 수준의 생산 역량을 보유하고 있습니다. 항시 넉넉한 예비 재고를 엄격 보유하여, 군부대 혹한기 훈련 등 다급한 긴급 대량 수급 의뢰에도 납기 지연 없이 안전하고 철저한 적시 직배송을 약속합니다.",
       icon: Factory,
       bgImage: IMAGES.m1,
+      iconBg: "bg-white/10 text-white border border-white/20",
+      borderAccent: "hover:border-[#FF4D00]"
+    },
+    {
+      title: "철저한 품질기준 준수 및 불량 관리",
       sub: "완벽 교환 & 환불 서비스",
       desc: "인체에 완전히 안심할 수 있는 무해 친환경 성분과 최고급 보온재, 부직포를 사용하여 만들었습니다. 혹여라도 발생할 수 있는 극소수 미세 결함에 대비하여 신속하고 유기적인 교환 및 안전 100% 환불 지원 체계를 작동합니다.",
       icon: ShieldCheck,

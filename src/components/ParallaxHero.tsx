@@ -105,7 +105,7 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
       badge: "ACTIVE WARMTH FOR EXTREME COLD",
       title: "혹한기 영하 20℃를 녹이는",
       titleAccent: "손일병 핫팩!",
-      bgUrl: IMAGES.campfire,
+      bgUrl: IMAGES.banner1,
       desc: (
         <>
           평균 온도 <span className="font-extrabold text-[#FF4D00]">65℃</span>, 최대 최고 온도{" "}
@@ -125,7 +125,7 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
       badge: "SPECIAL GIFT BONUSES",
       title: "손난로형 핫팩 구매자 전원",
       titleAccent: "핫팩 전용 파우치 증정!",
-      bgUrl: IMAGES.productPack,
+      bgUrl: IMAGES.banner2,
       desc: (
         <>
           주머니형 핫팩 <span className="font-black text-[#FF4D00] underline">30매당 전용 방한 파우치 1개</span>를 무상 무조건 지급해 드립니다.
@@ -147,7 +147,7 @@ export default function ParallaxHero({ onExploreClick }: ParallaxHeroProps) {
       badge: "PLATFORM DISCOUNT ACCESS",
       title: "손일병 핫팩 공식 온라인",
       titleAccent: "고객 특별 할인가 제공!",
-      bgUrl: IMAGES.warehouse,
+      bgUrl: IMAGES.banner3,
       desc: (
         <>
           소량부터 군부대 단체용 벌크 단위까지, 검증된 정품 라인업을 온라인 공식 할인 혜택가로 공급합니다.
