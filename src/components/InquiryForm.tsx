@@ -221,7 +221,7 @@ export default function InquiryForm({
                     type="text"
                     value={senderName}
                     onChange={(e) => setSenderName(e.target.value)}
-                    placeholder="예: ROK 육군 7사단 보급처 김대위 / 아웃도어 동호회 총무"
+                    placeholder="산악 동호회 총무 손영진"
                     className={`w-full bg-white border ${
                       errors.senderName ? "border-red-500/70" : "border-[#1F3821]/15 focus:border-[#FF4D00]"
                     } rounded-none px-4 py-3 text-sm text-black placeholder-stone-400 focus:outline-none transition-all shadow-inner`}
@@ -241,7 +241,7 @@ export default function InquiryForm({
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="예: sergeant@military.kr"
+                    placeholder=""
                     className={`w-full bg-white border ${
                       errors.email ? "border-red-500/70" : "border-[#1F3821]/15 focus:border-[#FF4D00]"
                     } rounded-none px-4 py-3 text-sm text-black placeholder-stone-400 focus:outline-none transition-all shadow-inner`}
@@ -300,7 +300,7 @@ export default function InquiryForm({
                 {/* Desired Quantity */}
                 <div>
                   <label className="block text-[10px] font-black text-[#1F3821]/65 mb-2 uppercase tracking-widest font-mono">
-                    희망 구입량 (최소 100개) <span className="text-[#FF4D00]">*</span>
+                    희망 구입량 (최소 1000개) <span className="text-[#FF4D00]">*</span>
                   </label>
                   <div className="relative">
                     <input
@@ -308,7 +308,7 @@ export default function InquiryForm({
                       value={quantity}
                       onChange={(e) => setQuantity(e.target.value === "" ? "" : Number(e.target.value))}
                       placeholder="예: 2500"
-                      min="100"
+                      min="1000"
                       className={`w-full bg-white border ${
                         errors.quantity ? "border-red-500/70" : "border-[#1F3821]/15 focus:border-[#FF4D00]"
                       } rounded-none px-4 py-3 text-sm text-black placeholder-stone-400 focus:outline-none transition-all shadow-inner`}
@@ -327,7 +327,7 @@ export default function InquiryForm({
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="예: 경기 연천군 ROK 보병연대 주둔지로 대량 수령 희망합니다. 우체국 택배 혹은 화물 트럭 진입이 가능한 군부대 배송 조건을 원하며, 영수증 세금계산서의 전자 선발행 및 선결제 지원 관련해서 검토 부탁드립니다."
+                  placeholder=""
                   rows={4}
                   className="w-full bg-white border border-[#1F3821]/15 focus:border-[#FF4D00] rounded-none px-4 py-3 text-sm text-black placeholder-stone-400 focus:outline-none transition-all resize-none shadow-inner"
                 />
