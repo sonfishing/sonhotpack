@@ -5,8 +5,8 @@ import { motion } from "motion/react";
 export default function ProductSpecs() {
   const specs = [
     {
-      title: "최고온 발열 - 70도 이상",
-      desc: "180g 대용량 기준 70도 이상의 폭발적인 고온 발열 성능으로 가혹한 영하 날씨 속에서도 차가워진 체온을 완벽하게 지켜줍니다.",
+      title: "최고온 발열 - 70도",
+      desc: "180g 대용량 기준 최대 온도 70도, 평균 65도의 폭발적인 고온 발열 성능으로 가혹한 영하 날씨 속에서도 차가워진 체온을 완벽하게 지켜줍니다.",
       icon: Flame,
     },
     {
@@ -16,7 +16,7 @@ export default function ProductSpecs() {
     },
     {
       title: "100% 국산 안심성분",
-      desc: "품질 좋은 부직포 원단과 안전한 친환경 성분만을 사용하여 터짐이 없고 냄새나 피부 자극 걱정 없이 안심하고 사용하실 수 있습니다.",
+      desc: "품질 좋은 부직포 원단과 안전한 성분만을 사용하였습니다. 부직포는 터지지 않고 냄새나 피부 트러블 없이 안심하고 사용하실 수 있습니다.",
       icon: Sparkles,
     },
     {
