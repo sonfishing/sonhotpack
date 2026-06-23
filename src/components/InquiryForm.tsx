@@ -13,6 +13,7 @@ export default function InquiryForm({
   onInquirySubmitted,
 }: InquiryFormProps) {
   const WEBHOOK_URL = "https://api.webhook.com/v1/sonhotpack_contact_form/75a53928-fa7a-472d-a8ab-7cd801520cfe";
+  const SHEETS_URL = "https://script.google.com/macros/s/AKfycbw4urXtxMb2TEOmN-8cBOFpb9lgUbP42Jq6iTMzLXQuVmyAugtOIGGMjTpVLhZ2N7LK/exec";
   const [senderName, setSenderName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -74,6 +75,11 @@ export default function InquiryForm({
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newInquiry),
     }).catch((err) => console.error("Webhook POST failed:", err));
+
+    // POST to Google Sheets
+    fetch(SHEETS_URL + "?data=" + encodeURIComponent(JSON.stringify(newInquiry)), {
+      method: "POST",
+    }).catch((err) => console.error("Sheets POST failed:", err));
 
     // Retrieve existing from localStorage
     const existingStr = localStorage.getItem("son_inquiries");
