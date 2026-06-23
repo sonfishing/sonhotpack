@@ -8,7 +8,7 @@ import CompanyAdvantages from "./components/CompanyAdvantages";
 import ProductCatalog from "./components/ProductCatalog";
 import InquiryForm from "./components/InquiryForm";
 import AdminPanel from "./components/AdminPanel";
-import MouseFlameEffect from "./components/MouseFlameEffect";
+
 import { MenuSection, Inquiry } from "./types";
 import { IMAGES } from "./assets";
 import { Flame, Award, ShieldCheck } from "lucide-react";
@@ -182,9 +182,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* Interactive fire cursor particle canvas overlay */}
-      <MouseFlameEffect />
 
       {/* Interactive CRM Sales database drawer */}
       <AdminPanel
