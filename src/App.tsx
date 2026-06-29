@@ -159,7 +159,7 @@ export default function App() {
             <div className="md:col-span-4 space-y-3">
               <h4 className="text-xs font-black text-white uppercase tracking-wider font-mono">사용자 취급 규격 주의서</h4>
               <p className="text-white/40 text-[11px] leading-relaxed">
-                본 제품은 혹한 훈련에 최적화된 강력 고온 고효열 설계입니다. 저온 화상을 원천 방지하기 위해 반드시 양말이나 내의 위에 부착하여 주시고 피부에 직접 오랜 시간 접촉되지 않도록 지도 바랍니다.
+                저온 화상을 원천 방지하기 위해 반드시 양말이나 내의 위에 부착하여 주시고 피부에 직접 오랜 시간 접촉되지 않도록 지도 바랍니다.
               </p>
             </div>
             
